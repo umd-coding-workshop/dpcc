@@ -5,10 +5,13 @@ Digital Preservation Cost Calculator
 ## Initial Brainstorm
 
 ```
-Units
+Dimensions
 [$] money
 [B] storage
 [T] time
+
+Units
+dollars, terabytes, years
 
 User supplied inputs
 - service (sets the rates and variables)
@@ -24,10 +27,10 @@ retrieval rate [$]/[B][T]
 Variables
 included storage   [B]
 included retrieval [B]
-storage quantum    [B] (e.g., APTrust sells storage in 5TB increments)
+storage increment  [B] (e.g., APTrust sells storage in 5TB increments)
 
 Formulas
-storage cost = storage rate * ceiling(non_negative(amount - included storage)/storage quantum)
+storage cost = storage rate * ceiling(non_negative(amount - included storage)/storage increment) * storage increment
 
 function non_negative(x) {
   return x >= 0 ? x : 0;
