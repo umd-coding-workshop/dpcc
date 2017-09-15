@@ -22,11 +22,9 @@ Rates
 ingest cost    [$]/[B]
 membership fee [$]/[T]
 storage rate   [$]/[B][T]
-retrieval rate [$]/[B][T]
 
 Variables
 included storage   [B]
-included retrieval [B]
 storage increment  [B] (e.g., APTrust sells storage in 5TB increments)
 
 Formulas
