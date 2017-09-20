@@ -2,6 +2,24 @@
 
 Digital Preservation Cost Calculator
 
+## Quick Start
+
+The latest build from master should always be at 
+<https://umd-coding-workshop.github.io/dpcc>
+
+## Building and Testing
+
+Use [Browserify] and [Browsersync] to build and test:
+
+```
+# install the build tools
+npm -g install browserify browser-sync
+
+# build and run for testing
+browserify dpcc-web.js -o build/dpcc-web.js
+browsersync start --server build
+```
+
 ## Initial Brainstorm
 
 ```
@@ -34,3 +52,6 @@ function non_negative(x) {
   return x >= 0 ? x : 0;
 }
 ```
+
+[Browserify]: http://browserify.org/
+[Browsersync]: https://www.browsersync.io/
