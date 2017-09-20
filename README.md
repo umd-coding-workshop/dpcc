@@ -16,6 +16,8 @@ Use [Browserify] and [Browsersync] to build and test:
 npm -g install browserify browser-sync
 
 # build and run for testing
+mkdir -p build
+cp docs/index.html build
 browserify dpcc-web.js -o build/dpcc-web.js
 browsersync start --server build
 ```
