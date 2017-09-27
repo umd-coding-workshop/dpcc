@@ -19,7 +19,7 @@ npm -g install browserify browser-sync
 mkdir -p build
 cp docs/index.html build
 browserify dpcc-web.js -o build/dpcc-web.js
-browsersync start --server build
+browser-sync start --server build
 ```
 
 ## Initial Brainstorm
