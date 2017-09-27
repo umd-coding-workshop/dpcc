@@ -4,21 +4,20 @@ Digital Preservation Cost Calculator
 
 ## Quick Start
 
-The latest build from master should always be at 
+The latest build from master should always be at
 <https://umd-coding-workshop.github.io/dpcc>
 
 ## Building and Testing
 
-Use [Browserify] and [Browsersync] to build and test:
+Use [Grunt], [Browserify], and [Browsersync] to build and test:
 
 ```
 # install the build tools
-npm -g install browserify browser-sync
+npm -g install grunt-cli browserify browser-sync
 
 # build and run for testing
-mkdir -p build
-cp docs/index.html build
-browserify dpcc-web.js -o build/dpcc-web.js
+npm install
+grunt
 browser-sync start --server build
 ```
 
@@ -55,5 +54,6 @@ function non_negative(x) {
 }
 ```
 
+[Grunt]: https://gruntjs.com/
 [Browserify]: http://browserify.org/
 [Browsersync]: https://www.browsersync.io/
