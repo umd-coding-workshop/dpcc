@@ -13,6 +13,9 @@ module.exports = function(grunt) {
         files: {
           'build/dpcc-web.js': ['dpcc-web.js']
         }
+      },
+      options: {
+        transform: ['brfs']
       }
     }
   });
