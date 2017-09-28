@@ -1,0 +1,122 @@
+[
+    {
+    "name": "DivIT",
+	"service": {
+		"ingest_rate": 200,
+		"membership_fee": 0,
+        "storage_rate": 33.84,
+        "included_storage": 0,
+        "storage_increment": 1
+        }
+	},
+	{
+	"name": "APTrust",
+	"service": {
+		"ingest_rate": 0,
+		"membership_fee": 20000,
+		"storage_rate": 550,
+		"included_storage": 10,
+		"storage_increment": 1
+		}
+	},
+	{
+	"name": "DPN Annual",
+	"service": {
+		"ingest_rate": 0,
+		"membership_fee": 20000,
+		"storage_rate": 750,
+		"included_storage": 5,
+		"storage_increment": 1
+		}
+	},        
+	{
+	"name": "DPN Perpetual",
+	"service": {
+		"ingest_rate": 0,
+		"membership_fee": 20000,
+		"storage_rate": 5000,
+		"included_storage": 5,
+		"storage_increment": 1
+		}
+	},
+	{
+	"name": "DuraCloud Enterprise (S3)",
+	"service": {
+		"ingest_rate": 0,
+		"membership_fee": 5250,
+		"storage_rate": 500,
+		"included_storage": 0,
+		"storage_increment": 1
+		}
+	},
+	{
+	"name": "DuraCloud Enterprise Plus (S3 + Glacier)",
+	"service": {
+		"ingest_rate": 0,
+		"membership_fee": 5250,
+		"storage_rate": 625,
+		"included_storage": 0,
+		"storage_increment": 1
+		}
+	},
+	{
+	"name": "DuraCloud Enterprise Plus (S3 + SDSC)",
+	"service": {
+		"ingest_rate": 0,
+		"membership_fee": 5550,
+		"storage_rate": 1200,
+		"included_storage": 0,
+		"storage_increment": 1
+		}
+	},
+	{
+	"name": "DuraCloud Enterprise Chronopolis",
+	"service": {
+	    "ingest_rate": 310,
+		"membership_fee": 2750,
+		"storage_rate": 500,
+		"included_storage": 0,
+		"storage_increment": 1
+		}
+	},
+	{
+	"name": "Preservica Standard (S3)",
+	"service": {
+		"ingest_rate": 0,
+		"membership_fee": 11950,
+		"storage_rate": 1450,
+		"included_storage": 1,
+		"storage_increment": 1
+		}
+	},
+	{
+	"name": "Preservica Standard (S3 + Glacier)",
+	"service": {
+		"ingest_rate": 0,
+		"membership_fee": 11950,
+		"storage_rate": 2000,
+		"included_storage": 1,
+		"storage_increment": 1
+		}
+	},
+	{
+	"name": "Preservica Standard (Glacier)",
+	"service": {
+		"ingest_rate": 0,
+		"membership_fee": 11950,
+		"storage_rate": 550,
+		"included_storage": 1,
+		"storage_increment": 1
+		}
+	},
+	{
+	"name": "Preservica Volume (S3 + Glacier)",
+	"service": {
+		"ingest_rate": 0,
+		"membership_fee": 11950,
+		"storage_rate": 1200,
+		"included_storage": 1,
+		"storage_increment": 1
+		}
+	}
+]
