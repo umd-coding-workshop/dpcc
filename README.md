@@ -9,7 +9,7 @@ The latest build from master should always be at
 
 ## Building and Testing
 
-Use [Grunt], [Browserify], and [Browsersync] to build and test:
+Requires [NodeJS]. Use [Grunt], [Browserify], and [Browsersync] to build and test the Web UI:
 
 ```
 # install the build tools
@@ -19,6 +19,18 @@ npm -g install grunt-cli browserify browser-sync
 npm install
 grunt
 browser-sync start --server build
+```
+
+## Command-Line Program
+
+There is also a [dpcc-cli.js](dpcc-cli.js) script that runs on the command line using NodeJS. It takes two arguments: the amount of data to store, and how long to store it for, and produces a chart of the costs for the various services defined in the [services.json](services.json) file.
+
+```
+# install dependencies
+npm install
+
+# estimate costs for 50 TB stored for 5 years
+./dpcc-cli.js 50 5
 ```
 
 ## Initial Brainstorm
@@ -54,6 +66,7 @@ function non_negative(x) {
 }
 ```
 
+[NodeJS]: https://nodejs.org/
 [Grunt]: https://gruntjs.com/
 [Browserify]: http://browserify.org/
 [Browsersync]: https://www.browsersync.io/

@@ -8,5 +8,8 @@
     "grunt-contrib-copy": "^1.0.0"
   },
   "homepage": "https://github.com/umd-coding-workshop/dpcc",
-  "repository": "umd-coding-workshop/dpcc"
+  "repository": "umd-coding-workshop/dpcc",
+  "dependencies": {
+    "sprintf-js": "^1.1.1"
+  }
 }
