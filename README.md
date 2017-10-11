@@ -9,16 +9,16 @@ The latest build from master should always be at
 
 ## Building and Testing
 
-Requires [NodeJS]. Use [Grunt], [Browserify], and [Browsersync] to build and test the Web UI:
+Requires [NodeJS]. Use [Grunt] and [Browserify] to build and test the Web UI:
 
 ```
 # install the build tools
-npm -g install grunt-cli browserify browser-sync
+npm -g install grunt-cli browserify
 
 # build and run for testing
 npm install
 grunt
-browser-sync start --server build
+./server.js
 ```
 
 ## Command-Line Program
@@ -69,4 +69,3 @@ function non_negative(x) {
 [NodeJS]: https://nodejs.org/
 [Grunt]: https://gruntjs.com/
 [Browserify]: http://browserify.org/
-[Browsersync]: https://www.browsersync.io/
