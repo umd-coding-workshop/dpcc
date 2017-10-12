@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const dpcc = require('./dpcc.js');
+const dpcc = require('./src/js/dpcc.js');
 const fs = require('fs');
 const sprintf = require("sprintf-js").sprintf;
 
