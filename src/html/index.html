@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Digital Preservation Cost Calculator</title>
+  </head>
+  <body>
+    <div id="service">
+      <h1>Service</h1>
+      <select id="services">
+        <option>-- Select a service --</option>
+        {{#services}}
+        <option value="{{value}}">{{name}}</option>
+        {{/services}}
+      </select>
+      <h2>Rates</h2>
+      <ol>
+        <li><label>Ingest rate: <input name="ingest_rate"/></label></li>
+        <li><label>Membership fee: <input name="membership_fee"/></label></li>
+        <li><label>Storage rate: <input name="storage_rate"/></label></li>
+      </ol>
+      <h2>Variables</h2>
+      <ol>
+        <li><label>Included storage: <input name="included_storage"/></label></li>
+        <li><label>Storage increment: <input name="storage_increment"/></label></li>
+      </ol>
+    </div>
+    <div id="user">
+      <h1>User-supplied Values</h1>
+      <ol>
+        <li><label>Amount stored: <input name="amount_stored"/> TB</label></li>
+        <li><label>Time: <input name="time"/></label> year(s)</li>
+      </ol>
+    </div>
+    <div id="costs">
+      <h1>Costs</h1>
+      <ol>
+        <li><label>Storage cost ($/y): <input name="storage"/></label></li>
+        <li><label>Yearly cost ($): <input name="yearly"/></label></li>
+        <li><label>Ingest cost ($): <input name="ingest"/></label></li>
+        <li><label>Total cost ($): <input name="total"/></label></li>
+      </ol>
+    </div>
+    <script type="application/javascript" src="dpcc-web.js"></script>
+  </body>
+</html>

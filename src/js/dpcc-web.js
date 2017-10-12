@@ -1,7 +1,4 @@
 const dpcc = require('./dpcc.js');
-const fs = require('fs');
-
-var services = JSON.parse(fs.readFileSync(__dirname + '/services.json'));
 
 var service = {};
 var user = {};
@@ -23,10 +20,7 @@ function get_user_inputs() {
 }
 
 var services_menu = document.getElementById('services');
-services.forEach(function (service, index) {
-  var option = document.createElement('option');
-  option.textContent = service.name;
-  option.value = JSON.stringify(service.service);
+services_menu.querySelectorAll('option[value]').forEach(function (option, index) {
   option.onclick = function (event) {
     window.service = JSON.parse(this.value);
     get_service_inputs().forEach(function (element, index) {
@@ -34,9 +28,7 @@ services.forEach(function (service, index) {
     });
     display_costs();
   };
-  services_menu.appendChild(option);
 });
-
 
 get_service_inputs().forEach(function (element, index) {
   window.service[element.name] = +element.value;
