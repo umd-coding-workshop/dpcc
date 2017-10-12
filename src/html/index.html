@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Digital Preservation Cost Calculator</title>
@@ -10,6 +11,7 @@
         {{#services}}
         <option value="{{value}}">{{name}}</option>
         {{/services}}
+        <option>[Custom Values]</option>
       </select>
       <h2>Rates</h2>
       <ol>
@@ -33,10 +35,10 @@
     <div id="costs">
       <h1>Costs</h1>
       <ol>
-        <li><label>Storage cost ($/y): <input name="storage"/></label></li>
-        <li><label>Yearly cost ($): <input name="yearly"/></label></li>
-        <li><label>Ingest cost ($): <input name="ingest"/></label></li>
-        <li><label>Total cost ($): <input name="total"/></label></li>
+        <li><label>Storage cost ($/y): <input name="storage" readonly="true"/></label></li>
+        <li><label>Yearly cost ($): <input name="yearly" readonly="true"/></label></li>
+        <li><label>Ingest cost ($): <input name="ingest" readonly="true"/></label></li>
+        <li><label>Total cost ($): <input name="total" readonly="true"/></label></li>
       </ol>
     </div>
     <script type="application/javascript" src="dpcc-web.js"></script>

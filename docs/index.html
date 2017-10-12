@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Digital Preservation Cost Calculator</title>
@@ -19,6 +20,7 @@
         <option value="{&quot;ingest_rate&quot;:0,&quot;membership_fee&quot;:11950,&quot;storage_rate&quot;:2000,&quot;included_storage&quot;:1,&quot;storage_increment&quot;:1}">Preservica Standard (S3 + Glacier)</option>
         <option value="{&quot;ingest_rate&quot;:0,&quot;membership_fee&quot;:11950,&quot;storage_rate&quot;:550,&quot;included_storage&quot;:1,&quot;storage_increment&quot;:1}">Preservica Standard (Glacier)</option>
         <option value="{&quot;ingest_rate&quot;:0,&quot;membership_fee&quot;:11950,&quot;storage_rate&quot;:1200,&quot;included_storage&quot;:1,&quot;storage_increment&quot;:1}">Preservica Volume (S3 + Glacier)</option>
+        <option>[Custom Values]</option>
       </select>
       <h2>Rates</h2>
       <ol>
@@ -42,10 +44,10 @@
     <div id="costs">
       <h1>Costs</h1>
       <ol>
-        <li><label>Storage cost ($/y): <input name="storage"/></label></li>
-        <li><label>Yearly cost ($): <input name="yearly"/></label></li>
-        <li><label>Ingest cost ($): <input name="ingest"/></label></li>
-        <li><label>Total cost ($): <input name="total"/></label></li>
+        <li><label>Storage cost ($/y): <input name="storage" readonly="true"/></label></li>
+        <li><label>Yearly cost ($): <input name="yearly" readonly="true"/></label></li>
+        <li><label>Ingest cost ($): <input name="ingest" readonly="true"/></label></li>
+        <li><label>Total cost ($): <input name="total" readonly="true"/></label></li>
       </ol>
     </div>
     <script type="application/javascript" src="dpcc-web.js"></script>
