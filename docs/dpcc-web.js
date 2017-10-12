@@ -41,6 +41,7 @@ services.forEach(function (service, index) {
 
 
 get_service_inputs().forEach(function (element, index) {
+  window.service[element.name] = +element.value;
   element.onchange = function (event) {
     window.service[element.name] = +this.value;
     display_costs();
@@ -49,6 +50,7 @@ get_service_inputs().forEach(function (element, index) {
 
 
 get_user_inputs().forEach(function (element, index) {
+  window.user[element.name] = +element.value;
   element.onchange = function (event) {
     window.user[element.name] = +this.value;
     display_costs();
@@ -198,7 +200,7 @@ function fromByteArray (uint8) {
 /*!
  * The buffer module from node.js, for the browser.
  *
- * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
+ * @author   Feross Aboukhadijeh <https://feross.org>
  * @license  MIT
  */
 /* eslint-disable no-proto */

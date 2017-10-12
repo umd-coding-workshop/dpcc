@@ -39,6 +39,7 @@ services.forEach(function (service, index) {
 
 
 get_service_inputs().forEach(function (element, index) {
+  window.service[element.name] = +element.value;
   element.onchange = function (event) {
     window.service[element.name] = +this.value;
     display_costs();
@@ -47,6 +48,7 @@ get_service_inputs().forEach(function (element, index) {
 
 
 get_user_inputs().forEach(function (element, index) {
+  window.user[element.name] = +element.value;
   element.onchange = function (event) {
     window.user[element.name] = +this.value;
     display_costs();
