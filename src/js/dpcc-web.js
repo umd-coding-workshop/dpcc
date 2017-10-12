@@ -19,16 +19,20 @@ function get_user_inputs() {
   return document.getElementById('user').querySelectorAll('input[name]');
 }
 
-var services_menu = document.getElementById('services');
-services_menu.querySelectorAll('option[value]').forEach(function (option, index) {
-  option.onclick = function (event) {
+document.getElementById('services').onchange = function (event) {
+  if (this.value.substr(0, 1) == '{') {
     window.service = JSON.parse(this.value);
     get_service_inputs().forEach(function (element, index) {
       element.value = window.service[element.name];
+      element.setAttribute("readonly", "true");
     });
     display_costs();
-  };
-});
+  } else if (this.value == '[Custom Values]') {
+    get_service_inputs().forEach(function (element, index) {
+      element.removeAttribute("readonly");
+    });
+  }
+};
 
 get_service_inputs().forEach(function (element, index) {
   window.service[element.name] = +element.value;
