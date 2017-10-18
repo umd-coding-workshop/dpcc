@@ -50,3 +50,9 @@ get_user_inputs().forEach(function (element, index) {
     display_costs();
   };
 });
+
+if (document.getElementById('services').value.substr(0, 1) == '{') {
+    get_service_inputs().forEach(function (element, index) {
+      element.setAttribute("readonly", "true");
+    });
+}

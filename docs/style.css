@@ -35,6 +35,8 @@ li {
 }
 input {
     border: 1px solid #657b83;
+    float: right;
+    margin-left: 1em;
 }
 #service input[readonly] {
     background: #eee;
