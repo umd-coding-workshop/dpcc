@@ -1,0 +1,42 @@
+h1 {
+    text-align: left;
+    font-family:"Courier";
+    font-size: 22px;
+}
+
+h2 {
+    font-family:"Courier";
+    font-size:16px;
+    text-align:left;
+    font-style: italic;
+}
+
+p {
+    font-family:"Courier";
+    font-size: 16px;
+}
+
+ol {
+    font-family:"Courier";
+    font-size: 16px;
+}
+
+li {
+    padding-bottom:5pt;
+}
+
+.solid {
+    border-style: solid;
+    border-width:1px;
+    padding:4pt;
+    display: inline-block;
+    color: #657b83;
+    background: #fdf6e3;
+}
+input {
+    border: 1px solid #657b83;
+}
+#service input[readonly] {
+    background: #eee;
+    border: 1px solid #eee;
+}
