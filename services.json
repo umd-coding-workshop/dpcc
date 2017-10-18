@@ -7,7 +7,7 @@
         "storage_rate": 33.84,
         "included_storage": 0,
         "storage_increment": 1,
-        "note":
+        "note": ""
         }
     },
     {
@@ -18,7 +18,7 @@
         "storage_rate": 420,
         "included_storage": 10,
         "storage_increment": 1,
-        "note":
+        "note": ""
         }
     },
     {
@@ -29,7 +29,7 @@
         "storage_rate": 750,
         "included_storage": 5,
         "storage_increment": 1,
-        "note":
+        "note": ""
         }
     },
     {
@@ -51,7 +51,7 @@
         "storage_rate": 500,
         "included_storage": 0,
         "storage_increment": 1,
-        "note":
+        "note": ""
         }
     },
     {
@@ -62,7 +62,7 @@
         "storage_rate": 625,
         "included_storage": 0,
         "storage_increment": 1,
-        "note":
+        "note": ""
         }
     },
     {
@@ -73,7 +73,7 @@
         "storage_rate": 1200,
         "included_storage": 0,
         "storage_increment": 1,
-        "note":
+        "note": ""
         }
     },
     {
@@ -84,7 +84,7 @@
         "storage_rate": 500,
         "included_storage": 0,
         "storage_increment": 1,
-        "note":
+        "note": ""
         }
     },
     {
@@ -95,7 +95,7 @@
         "storage_rate": 1450,
         "included_storage": 1,
         "storage_increment": 1,
-        "note":
+        "note": ""
         }
     },
     {
@@ -106,7 +106,7 @@
         "storage_rate": 2000,
         "included_storage": 1,
         "storage_increment": 1,
-        "note":
+        "note": ""
         }
     },
     {
@@ -117,7 +117,7 @@
         "storage_rate": 550,
         "included_storage": 1,
         "storage_increment": 1,
-        "note":
+        "note": ""
         }
     },
     {
@@ -128,7 +128,7 @@
         "storage_rate": 1200,
         "included_storage": 1,
         "storage_increment": 1,
-        "note":
+        "note": ""
         }
     }
 ]
