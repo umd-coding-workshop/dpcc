@@ -52,6 +52,12 @@ get_user_inputs().forEach(function (element, index) {
   };
 });
 
+if (document.getElementById('services').value.substr(0, 1) == '{') {
+    get_service_inputs().forEach(function (element, index) {
+      element.setAttribute("readonly", "true");
+    });
+}
+
 },{"./dpcc.js":2}],2:[function(require,module,exports){
 function non_negative(x) {
     return x >= 0 ? x : 0;
