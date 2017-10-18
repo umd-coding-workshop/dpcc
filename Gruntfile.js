@@ -7,7 +7,9 @@ module.exports = function(grunt) {
       dist: {
         files: {
           'docs/index.html': ['build/index.html'],
-          'docs/dpcc-web.js': ['build/dpcc-web.js']
+          'docs/dpcc-web.js': ['build/dpcc-web.js'],
+          'build/style.css' : ['src/css/style.css'],
+	  'docs/style.css': ['build/style.css']
         }
       }
     },

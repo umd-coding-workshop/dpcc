@@ -1,0 +1,38 @@
+h1 {
+    text-align: left;
+    font-family:"Courier";
+    font-size: 22px;
+}
+
+h2 {
+    font-family:"Courier";
+    font-size:16px;
+    text-align:left;
+    font-style: italic;
+}
+
+p {
+    font-family:"Courier";
+    font-size: 16px;
+}
+
+#label {
+#    font-family:"Courier";
+#    font-size: 16px;
+#}
+
+ol {
+    font-family:"Courier";
+    font-size: 16px;
+}
+
+li {
+    padding-bottom:5pt;
+}
+
+.solid {
+    border-style: solid;
+    border-width:1px;
+    padding:4pt;
+}
+
